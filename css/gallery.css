@@ -1,0 +1,12 @@
+
+#gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (425px < width){
+    #gallery{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    } 
+}

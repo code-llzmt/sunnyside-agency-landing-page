@@ -1,0 +1,268 @@
+
+/* barlow-600 - latin */
+/* https://gwfh.mranftl.com/fonts/barlow?subsets=latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../assets/fonts/barlow-v12-latin/barlow-v12-latin-600.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../assets/fonts/barlow-v12-latin/barlow-v12-latin-600.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* fraunces-700 - latin */
+/* https://gwfh.mranftl.com/fonts/fraunces?subsets=latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../assets/fonts/fraunces-v31-latin/fraunces-v31-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../assets/fonts/fraunces-v31-latin/fraunces-v31-latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* fraunces-900 - latin */
+/* https://gwfh.mranftl.com/fonts/fraunces?subsets=latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../assets/fonts/fraunces-v31-latin/fraunces-v31-latin-900.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../assets/fonts/fraunces-v31-latin/fraunces-v31-latin-900.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+:root{
+    /* underlines */
+    --underline-clr-01: hsl(51, 100%, 49%);
+    --underline-clr-02: hsl(7, 99%, 70%);
+
+    /* button */
+    --button-bg-color: hsl(0, 0%, 100%);
+    --button-bg-color-mobile: hsl(51, 100%, 49%);
+    --button-bg-color-hover: rgb(134, 205, 252);
+
+    /* graphic design text */
+    --dark-desaturated-cyan: hsl(167, 40%, 24%);
+    /* photography text */
+    --dark-blue: hsl(198, 62%, 26%);
+
+    /* footer */
+    --footer-links-color: hsl(168, 34%, 41%);
+    --footer-background-color: hsl(165, 36%, 72%);
+    
+    /* neutral */
+    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+
+    /* transition time */
+    --transition-time: 500ms;
+}
+
+body{
+    width: clamp(375px, 100%, 1440px);
+    margin-inline: auto;
+    
+    font-size: 18px;
+    line-height: 1;
+}
+
+img, svg{
+    max-width: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+.logo-white, .logo-green{
+    width: 9.5rem;
+    cursor: pointer;
+}
+
+/* fonts */
+h1{
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 3rem;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+h2{
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: var(--very-dark-desaturated-blue);
+}
+
+h3{
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.grid-five h3{
+    color: var(--dark-desaturated-cyan);
+}
+
+.grid-six h3{
+    color: var(--dark-blue); 
+}
+
+h4{
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 1rem;
+    color: var(--grayish-blue);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+h5{
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 1rem;
+    color: var(--very-dark-desaturated-blue);
+}
+
+h6{
+    font-family: 'Barlow';
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--grayish-blue);
+}
+
+p{
+    font-family: 'Barlow';
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--dark-grayish-blue);
+    line-height: 1.5;
+}
+
+.grid-five p{
+    color: var(--dark-desaturated-cyan);
+}
+
+.grid-six p{
+    color: var(--dark-blue); 
+}
+
+.testimonial p{
+    color: hsl(213, 9%, 39%);
+}
+
+/* navbar links */
+nav a{
+    font-family: 'Barlow';
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--white);
+}
+@media (768px >= width){
+    .nav-links a{
+        color: hsl(210, 4%, 67%);
+    }
+
+    .nav-links button{
+        background-color: var(--button-bg-color-mobile);
+    }
+}
+
+/* underlined links */
+.underlined-link{
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 0.8rem;
+
+    color: hsl(212, 27%, 19%);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.red-underline, .yellow-underline{
+    position: relative;
+}
+
+.red-underline::after, .yellow-underline::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 10px;
+    border-radius: 1rem;
+    opacity: 0.5;
+    transition: 500ms;
+    z-index: -1;
+}
+
+.yellow-underline::after{
+    background: var(--underline-clr-01);
+}
+
+.red-underline::after{
+    background: var(--underline-clr-02);
+}
+
+.underlined-link:hover::after{
+    opacity: 1;
+}
+
+/* footer links */
+footer a{
+    font-family: 'Barlow';
+    font-weight: 600;
+    font-size: 1rem;
+
+    text-decoration: none;
+    color: var(--footer-links-color);
+}
+
+footer a:hover{
+    color: var(--white);
+}
+
+.footer-socials > svg{
+    cursor: pointer;
+    color: var(--footer-links-color);
+}
+
+.footer-socials > svg:hover{
+    color: var(--white);
+}
+
+/* button */
+button{
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size: 0.8rem;
+
+    color: hsl(212, 27%, 19%);
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    padding: 1rem 1.8rem;
+    border-radius: 2rem;
+    background-color: var(--button-bg-color);
+    transition: all var(--transition-time);
+}
+
+button:hover{
+    color: var(--white);
+    background-color: var(--button-bg-color-hover);
+}
