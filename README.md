@@ -10,5 +10,5 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 
 ### Links
 
-- Solution URL: [ https://github.com/code-llzmt/sunnyside-agency-landing-page-main.git ]
-- Live Site URL: [ https://code-llzmt.github.io/sunnyside-agency-landing-page-main ]
+- Solution URL: [ https://github.com/code-llzmt/sunnyside-agency-landing-page.git ]
+- Live Site URL: [ https://code-llzmt.github.io/sunnyside-agency-landing-page ]
